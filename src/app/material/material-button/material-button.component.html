@@ -1,0 +1,32 @@
+<h3>Simple Buttons</h3>
+<div>
+<button mat-button>Basic button</button>
+<button mat-button color="primary">Primary button</button>
+</div>
+
+<h3>Raised Buttons</h3>
+<div>
+  <button mat-raised-button [disabled]="form.disabled">Basic</button>
+  <button mat-raised-button color="primary" [disabled]="form.disabled">Primary raised</button>
+</div>
+
+<h3>Icon Buttons</h3>
+<div>
+  <button mat-icon-button (click) = "onClick($event)">
+    <mat-icon>grade</mat-icon>
+  </button>
+  <button mat-icon-button color="primary">
+    <mat-icon>grade</mat-icon>
+  </button>
+</div>
+
+<h3>Float Action Buttons</h3>
+<div>
+  <button mat-fab (click)="onClick($event)">
+    <mat-icon>grade</mat-icon>
+  </button>
+
+  <button mat-fab color="primary">
+      <mat-icon>add</mat-icon>
+    </button>
+</div>
