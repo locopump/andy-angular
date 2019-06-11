@@ -26,8 +26,11 @@
   <span>Angular material toolbar</span>
 </mat-toolbar>
 <nav>
-  <a href="">
-    <button mat-button color="primary">Home</button>
+  <a>
+    <button mat-button color="primary" [routerLink]="'/'">Home</button>
+  </a>
+  <a>
+    <button mat-button color="primary" [routerLink]="'/material-demo'">Material Demo</button>
   </a>
 </nav>
 

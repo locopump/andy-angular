@@ -1,0 +1,8 @@
+<mat-list-item (click)="onClick(persona)">
+  <img *ngIf="persona.fotoURL" mat-line mat-list-avatar
+       [src]="persona.fotoURL" alt="">
+  <img *ngIf="!persona.fotoURL" mat-line mat-list-avatar
+       [src]="DEFAULT_PICTURE" alt="">
+  <span mat-line>{{ persona.nombre }}</span>
+  <span mat-line>{{ persona.apellidos }}</span>
+</mat-list-item>

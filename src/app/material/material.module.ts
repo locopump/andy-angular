@@ -12,11 +12,12 @@ import {
 } from '@angular/material';
 import { MaterialButtonComponent } from './material-button/material-button.component';
 import { MaterialInputComponent } from './material-input/material-input.component';
-import { MaterialListComponent } from './material-list/material-list.component'
+import { MaterialListComponent } from './material-list/material-list.component';
+import { ItemPersonaComponent } from './material-list/item-persona/item-persona.component'
 
 
 @NgModule({
-  declarations: [MaterialDemoComponent, MaterialButtonComponent, MaterialInputComponent, MaterialListComponent],
+  declarations: [MaterialDemoComponent, MaterialButtonComponent, MaterialInputComponent, MaterialListComponent, ItemPersonaComponent],
   imports: [
     CommonModule,
     MatToolbarModule,

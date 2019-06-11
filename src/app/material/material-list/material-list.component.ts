@@ -15,7 +15,7 @@ export class MaterialListComponent implements OnInit {
 
   listaPersonas: Persona[];
 
-  readonly DEFAULT_PICTURE: string = 'https://www.palmcityyachts.com/wp/wp-content/uploads/palmcityyachts.com/2015/09/default-profile-480x480.png';
+  // readonly DEFAULT_PICTURE: string = 'https://www.palmcityyachts.com/wp/wp-content/uploads/palmcityyachts.com/2015/09/default-profile-480x480.png';
 
   constructor() { }
 
@@ -39,6 +39,7 @@ export class MaterialListComponent implements OnInit {
     };
 
     this.listaPersonas = [
+      this.persona1,
       this.persona2,
       this.persona3
     ];
@@ -51,6 +52,10 @@ export class MaterialListComponent implements OnInit {
         fotoURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0iKld5FgQjluHpukPBUFsES-yNHNF4uKPpayZkxIgFUN6aBPN'
       }
     }, 5000);
+
+  }
+  onMouseClick($event: Persona) {
+    console.log('click on:',$event.nombre);
   }
 
 }
