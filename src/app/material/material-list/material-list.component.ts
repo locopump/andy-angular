@@ -39,7 +39,7 @@ export class MaterialListComponent implements OnInit {
     };
 
     this.listaPersonas = [
-      this.persona1,
+      // this.persona1,
       this.persona2,
       this.persona3
     ];

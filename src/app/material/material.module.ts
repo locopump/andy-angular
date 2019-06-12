@@ -8,7 +8,8 @@ import {
   MatIconModule,
   MatExpansionModule,
   MatInputModule,
-  MatListModule
+  MatListModule,
+  MatCardModule
 } from '@angular/material';
 import { MaterialButtonComponent } from './material-button/material-button.component';
 import { MaterialInputComponent } from './material-input/material-input.component';
@@ -25,7 +26,8 @@ import { ItemPersonaComponent } from './material-list/item-persona/item-persona.
     MatIconModule,
     MatExpansionModule,
     MatInputModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
   ],
   exports: [
     MatToolbarModule,
@@ -33,7 +35,8 @@ import { ItemPersonaComponent } from './material-list/item-persona/item-persona.
     MatIconModule,
     MatExpansionModule,
     MatInputModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
   ]
 })
 export class MaterialModule { }
