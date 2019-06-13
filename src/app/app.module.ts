@@ -12,6 +12,7 @@ import { MaterialModule } from './material/material.module';
 import { HomeComponent } from './webcontent/home/home.component';
 import { NasaApiService } from './shared/services/nasa-api.service';
 import { LowerCasePipe } from './shared/pipes/lower-case.pipe';
+import { MarsModule } from './mars/mars.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import { LowerCasePipe } from './shared/pipes/lower-case.pipe';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    MarsModule
   ],
   providers: [NasaApiService],
   bootstrap: [AppComponent]

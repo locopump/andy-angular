@@ -22,8 +22,10 @@ export class HomeComponent implements OnInit {
       }, 5000);
 
     }, error => {
-      console.log('Error al conectar con el servidor');
-      this.error = 'Error al conectar con el servidor';
+      setTimeout(() => {
+        console.log('Error al conectar con el servidor');
+        this.error = 'Error al conectar con el servidor';
+      }, 5000);
     });
   }
 

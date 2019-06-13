@@ -9,12 +9,15 @@ import {
   MatExpansionModule,
   MatInputModule,
   MatListModule,
-  MatCardModule
+  MatCardModule,
+  MatProgressSpinnerModule,
+  MatSelectModule
 } from '@angular/material';
 import { MaterialButtonComponent } from './material-button/material-button.component';
 import { MaterialInputComponent } from './material-input/material-input.component';
 import { MaterialListComponent } from './material-list/material-list.component';
-import { ItemPersonaComponent } from './material-list/item-persona/item-persona.component'
+import { ItemPersonaComponent } from './material-list/item-persona/item-persona.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -27,7 +30,10 @@ import { ItemPersonaComponent } from './material-list/item-persona/item-persona.
     MatExpansionModule,
     MatInputModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatProgressSpinnerModule,
+    FormsModule,
+    MatSelectModule
   ],
   exports: [
     MatToolbarModule,
@@ -36,7 +42,9 @@ import { ItemPersonaComponent } from './material-list/item-persona/item-persona.
     MatExpansionModule,
     MatInputModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatProgressSpinnerModule,
+    MatSelectModule
   ]
 })
 export class MaterialModule { }
